@@ -1,0 +1,739 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservice/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservice/">
+
+<xs:element name="actualizarPedidoAEntregado" type="tns:actualizarPedidoAEntregado"/>
+
+<xs:element name="actualizarPedidoAEntregadoResponse" type="tns:actualizarPedidoAEntregadoResponse"/>
+
+<xs:element name="agregarPedido" type="tns:agregarPedido"/>
+
+<xs:element name="agregarPedidoResponse" type="tns:agregarPedidoResponse"/>
+
+<xs:element name="cambiarEstadoPedido" type="tns:cambiarEstadoPedido"/>
+
+<xs:element name="cambiarEstadoPedidoAListo" type="tns:cambiarEstadoPedidoAListo"/>
+
+<xs:element name="cambiarEstadoPedidoAListoResponse" type="tns:cambiarEstadoPedidoAListoResponse"/>
+
+<xs:element name="cambiarEstadoPedidoResponse" type="tns:cambiarEstadoPedidoResponse"/>
+
+<xs:element name="cantPedBuenosMIN" type="tns:cantPedBuenosMIN"/>
+
+<xs:element name="cantPedBuenosMINFiltrados" type="tns:cantPedBuenosMINFiltrados"/>
+
+<xs:element name="cantPedBuenosMINFiltradosResponse" type="tns:cantPedBuenosMINFiltradosResponse"/>
+
+<xs:element name="cantPedBuenosMINResponse" type="tns:cantPedBuenosMINResponse"/>
+
+<xs:element name="cantPedBuenosSEG" type="tns:cantPedBuenosSEG"/>
+
+<xs:element name="cantPedBuenosSEGFiltrados" type="tns:cantPedBuenosSEGFiltrados"/>
+
+<xs:element name="cantPedBuenosSEGFiltradosResponse" type="tns:cantPedBuenosSEGFiltradosResponse"/>
+
+<xs:element name="cantPedBuenosSEGResponse" type="tns:cantPedBuenosSEGResponse"/>
+
+<xs:element name="cantPedMalosMIN" type="tns:cantPedMalosMIN"/>
+
+<xs:element name="cantPedMalosMINFiltrados" type="tns:cantPedMalosMINFiltrados"/>
+
+<xs:element name="cantPedMalosMINFiltradosResponse" type="tns:cantPedMalosMINFiltradosResponse"/>
+
+<xs:element name="cantPedMalosMINResponse" type="tns:cantPedMalosMINResponse"/>
+
+<xs:element name="cantPedMalosSEGFiltrados" type="tns:cantPedMalosSEGFiltrados"/>
+
+<xs:element name="cantPedMalosSEGFiltradosResponse" type="tns:cantPedMalosSEGFiltradosResponse"/>
+
+<xs:element name="cantPedMalosSeg" type="tns:cantPedMalosSeg"/>
+
+<xs:element name="cantPedMalosSegResponse" type="tns:cantPedMalosSegResponse"/>
+
+<xs:element name="getEstadoPedidoCliente" type="tns:getEstadoPedidoCliente"/>
+
+<xs:element name="getEstadoPedidoClienteResponse" type="tns:getEstadoPedidoClienteResponse"/>
+
+<xs:element name="getHistorialPedidos" type="tns:getHistorialPedidos"/>
+
+<xs:element name="getHistorialPedidosFiltrados" type="tns:getHistorialPedidosFiltrados"/>
+
+<xs:element name="getHistorialPedidosFiltradosResponse" type="tns:getHistorialPedidosFiltradosResponse"/>
+
+<xs:element name="getHistorialPedidosResponse" type="tns:getHistorialPedidosResponse"/>
+
+<xs:element name="getHoraDeEspera" type="tns:getHoraDeEspera"/>
+
+<xs:element name="getHoraDeEsperaResponse" type="tns:getHoraDeEsperaResponse"/>
+
+<xs:element name="getHoraRegistro" type="tns:getHoraRegistro"/>
+
+<xs:element name="getHoraRegistroResponse" type="tns:getHoraRegistroResponse"/>
+
+<xs:element name="getMinDeEspera" type="tns:getMinDeEspera"/>
+
+<xs:element name="getMinDeEsperaResponse" type="tns:getMinDeEsperaResponse"/>
+
+<xs:element name="getNumTotalPedidos" type="tns:getNumTotalPedidos"/>
+
+<xs:element name="getNumTotalPedidosResponse" type="tns:getNumTotalPedidosResponse"/>
+
+<xs:element name="getPromHoraFiltrada" type="tns:getPromHoraFiltrada"/>
+
+<xs:element name="getPromHoraFiltradaResponse" type="tns:getPromHoraFiltradaResponse"/>
+
+<xs:element name="getPromMinFiltrado" type="tns:getPromMinFiltrado"/>
+
+<xs:element name="getPromMinFiltradoResponse" type="tns:getPromMinFiltradoResponse"/>
+
+<xs:element name="getPromSegFiltrado" type="tns:getPromSegFiltrado"/>
+
+<xs:element name="getPromSegFiltradoResponse" type="tns:getPromSegFiltradoResponse"/>
+
+<xs:element name="getPromedioDeHoras" type="tns:getPromedioDeHoras"/>
+
+<xs:element name="getPromedioDeHorasResponse" type="tns:getPromedioDeHorasResponse"/>
+
+<xs:element name="getPromedioDeMinutos" type="tns:getPromedioDeMinutos"/>
+
+<xs:element name="getPromedioDeMinutosResponse" type="tns:getPromedioDeMinutosResponse"/>
+
+<xs:element name="getPromedioDeSegundos" type="tns:getPromedioDeSegundos"/>
+
+<xs:element name="getPromedioDeSegundosResponse" type="tns:getPromedioDeSegundosResponse"/>
+
+<xs:element name="getSegDeEspera" type="tns:getSegDeEspera"/>
+
+<xs:element name="getSegDeEsperaResponse" type="tns:getSegDeEsperaResponse"/>
+
+<xs:element name="getTotalDePedidosFiltrado" type="tns:getTotalDePedidosFiltrado"/>
+
+<xs:element name="getTotalDePedidosFiltradoResponse" type="tns:getTotalDePedidosFiltradoResponse"/>
+
+<xs:element name="horaRegPed" type="tns:horaRegPed"/>
+
+<xs:element name="horaRegPedResponse" type="tns:horaRegPedResponse"/>
+
+<xs:element name="horaRegistroPedido" type="tns:horaRegistroPedido"/>
+
+<xs:element name="horaRegistroPedidoResponse" type="tns:horaRegistroPedidoResponse"/>
+
+<xs:element name="id_CargoPersona" type="tns:id_CargoPersona"/>
+
+<xs:element name="id_CargoPersonaResponse" type="tns:id_CargoPersonaResponse"/>
+
+<xs:element name="ingresar" type="tns:ingresar"/>
+
+<xs:element name="ingresarResponse" type="tns:ingresarResponse"/>
+
+<xs:element name="ingresoDeCliente" type="tns:ingresoDeCliente"/>
+
+<xs:element name="ingresoDeClienteResponse" type="tns:ingresoDeClienteResponse"/>
+
+<xs:element name="minutoRegPed" type="tns:minutoRegPed"/>
+
+<xs:element name="minutoRegPedResponse" type="tns:minutoRegPedResponse"/>
+
+<xs:element name="nombreCliente" type="tns:nombreCliente"/>
+
+<xs:element name="nombreClienteResponse" type="tns:nombreClienteResponse"/>
+
+<xs:element name="numCantPedidosHoy" type="tns:numCantPedidosHoy"/>
+
+<xs:element name="numCantPedidosHoyResponse" type="tns:numCantPedidosHoyResponse"/>
+
+<xs:element name="numPedido" type="tns:numPedido"/>
+
+<xs:element name="numPedidoResponse" type="tns:numPedidoResponse"/>
+
+<xs:element name="numTotalDePersonas" type="tns:numTotalDePersonas"/>
+
+<xs:element name="numTotalDePersonasResponse" type="tns:numTotalDePersonasResponse"/>
+
+<xs:element name="pedidosDeHoy" type="tns:pedidosDeHoy"/>
+
+<xs:element name="pedidosDeHoyResponse" type="tns:pedidosDeHoyResponse"/>
+
+<xs:element name="pedidosPorFecha" type="tns:pedidosPorFecha"/>
+
+<xs:element name="pedidosPorFechaResponse" type="tns:pedidosPorFechaResponse"/>
+
+<xs:element name="registrarHistorialPedidos" type="tns:registrarHistorialPedidos"/>
+
+<xs:element name="registrarHistorialPedidosResponse" type="tns:registrarHistorialPedidosResponse"/>
+
+<xs:element name="registrarPersonal" type="tns:registrarPersonal"/>
+
+<xs:element name="registrarPersonalResponse" type="tns:registrarPersonalResponse"/>
+
+<xs:element name="segundoRegPed" type="tns:segundoRegPed"/>
+
+<xs:element name="segundoRegPedResponse" type="tns:segundoRegPedResponse"/>
+
+<xs:element name="todasLasPersonas" type="tns:todasLasPersonas"/>
+
+<xs:element name="todasLasPersonasResponse" type="tns:todasLasPersonasResponse"/>
+
+<xs:element name="todosLosPedidos" type="tns:todosLosPedidos"/>
+
+<xs:element name="todosLosPedidosResponse" type="tns:todosLosPedidosResponse"/>
+
+<xs:complexType name="getSegDeEspera">
+<xs:sequence>
+<xs:element name="numPed" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSegDeEsperaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHistorialPedidosFiltrados">
+<xs:sequence>
+<xs:element name="fecha1" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHistorialPedidosFiltradosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:historialPedidos" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="historialPedidos">
+<xs:sequence>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="hora_de_espera" type="xs:int"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="min_de_espera" type="xs:int"/>
+<xs:element name="nom_persona" type="xs:string" minOccurs="0"/>
+<xs:element name="num_ped" type="xs:int"/>
+<xs:element name="rut_persona" type="xs:string" minOccurs="0"/>
+<xs:element name="seg_de_espera" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="numPedido">
+<xs:sequence>
+<xs:element name="rutCliente" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="numPedidoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizarPedidoAEntregado">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizarPedidoAEntregadoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromHoraFiltrada">
+<xs:sequence>
+<xs:element name="fecha1" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromHoraFiltradaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarPersonal">
+<xs:sequence>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="idCargo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarPersonalResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pedidosPorFecha">
+<xs:sequence>
+<xs:element name="fecha_Filtro" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pedidosPorFechaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pedido" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pedido">
+<xs:sequence>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="estado_pedido" type="xs:int"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="nom_persona" type="xs:string" minOccurs="0"/>
+<xs:element name="rut_persona" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="numTotalDePersonas">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="numTotalDePersonasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromSegFiltrado">
+<xs:sequence>
+<xs:element name="fecha1" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromSegFiltradoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cambiarEstadoPedido">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cambiarEstadoPedidoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cambiarEstadoPedidoAListo">
+<xs:sequence>
+<xs:element name="idPedido" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cambiarEstadoPedidoAListoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresoDeCliente">
+<xs:sequence>
+<xs:element name="rutCliente" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresoDeClienteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHoraDeEspera">
+<xs:sequence>
+<xs:element name="numPed" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHoraDeEsperaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedMalosMINFiltrados">
+<xs:sequence>
+<xs:element name="fecha1" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha2" type="xs:string" minOccurs="0"/>
+<xs:element name="tiempo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedMalosMINFiltradosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresar">
+<xs:sequence>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNumTotalPedidos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getNumTotalPedidosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedMalosMIN">
+<xs:sequence>
+<xs:element name="tiempo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedMalosMINResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="segundoRegPed">
+<xs:sequence>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="segundoRegPedResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedMalosSEGFiltrados">
+<xs:sequence>
+<xs:element name="fecha1" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha2" type="xs:string" minOccurs="0"/>
+<xs:element name="tiempo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedMalosSEGFiltradosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarPedido">
+<xs:sequence>
+<xs:element name="rut_Persona" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre_Persona" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarPedidoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedBuenosMIN">
+<xs:sequence>
+<xs:element name="tiempo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedBuenosMINResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="minutoRegPed">
+<xs:sequence>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="minutoRegPedResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHistorialPedidos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getHistorialPedidosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:historialPedidos" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEstadoPedidoCliente">
+<xs:sequence>
+<xs:element name="rutCliente" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEstadoPedidoClienteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nombreCliente">
+<xs:sequence>
+<xs:element name="rutCliente" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nombreClienteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedMalosSeg">
+<xs:sequence>
+<xs:element name="tiempo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedMalosSegResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedBuenosSEG">
+<xs:sequence>
+<xs:element name="tiempo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedBuenosSEGResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="id_CargoPersona">
+<xs:sequence>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="id_CargoPersonaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHoraRegistro">
+<xs:sequence>
+<xs:element name="idPed" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHoraRegistroResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarHistorialPedidos">
+<xs:sequence>
+<xs:element name="numPed" type="xs:int"/>
+<xs:element name="rutPersona" type="xs:string" minOccurs="0"/>
+<xs:element name="nomPersona" type="xs:string" minOccurs="0"/>
+<xs:element name="horaDeEspera" type="xs:int"/>
+<xs:element name="minDeEspera" type="xs:int"/>
+<xs:element name="segDeEspera" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrarHistorialPedidosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedBuenosMINFiltrados">
+<xs:sequence>
+<xs:element name="fecha1" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha2" type="xs:string" minOccurs="0"/>
+<xs:element name="tiempo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedBuenosMINFiltradosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromedioDeHoras">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPromedioDeHorasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromedioDeSegundos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPromedioDeSegundosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="horaRegPed">
+<xs:sequence>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="horaRegPedResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="todasLasPersonas">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="todasLasPersonasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:persona" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persona">
+<xs:sequence>
+<xs:element name="id_Cargo" type="xs:int"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="numCantPedidosHoy">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="numCantPedidosHoyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMinDeEspera">
+<xs:sequence>
+<xs:element name="numPed" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMinDeEsperaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTotalDePedidosFiltrado">
+<xs:sequence>
+<xs:element name="fecha1" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTotalDePedidosFiltradoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromedioDeMinutos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPromedioDeMinutosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pedidosDeHoy">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="pedidosDeHoyResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pedido" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedBuenosSEGFiltrados">
+<xs:sequence>
+<xs:element name="fecha1" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha2" type="xs:string" minOccurs="0"/>
+<xs:element name="tiempo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cantPedBuenosSEGFiltradosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="horaRegistroPedido">
+<xs:sequence>
+<xs:element name="rut" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="horaRegistroPedidoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromMinFiltrado">
+<xs:sequence>
+<xs:element name="fecha1" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromMinFiltradoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="todosLosPedidos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="todosLosPedidosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pedido" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
